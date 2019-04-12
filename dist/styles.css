@@ -1,43 +1,68 @@
 body {
-
+   margin: 0;
+    width: 100%;
+     text-align: center;
 }
 
 .title {
-
+  border-color: black;
+  text-align: center;
 }
 
 .about {
-
-}
-
-.aboutFlex {
-  display: flex;
-}
-
-.skills {
-
-}
-
-.skillsContent {
-
-}
-
-.projects {
-
-}
-
-.contact {
-
-}
-
-.container {
-
-}
-
-img {
-
+   color: white;
+   background-color: black;
+   width: 50%;
+   display: inline-block;
+   height: 220px;
+   text-align: left;
+   border-radius: 5px;
+   box-shadow: 6px 10px 8px #888888;
 }
 
 .aboutContent {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
+.bash {
+   background-color: #32CD32;
+   width: 100%;
+   text-align: center;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.skills {
+   border-color: black;
+   text-align: center;
+}
+
+.skillsContent {
+   border-color: black;
+   text-align: center;
+}
+
+.projects {
+   border-color: black;
+   text-align: center;
+}
+
+.contact {
+   border-color: black;
+   text-align: center;
+}
+
+.charts {
+  display: flex;
+  padding-top: 50px;
+margin: 0 auto;
+text-align: center;
+width: 45%
+}
+
+.indivCharts {
+   align-content: center;
+   width: 100px;
+   height: 100px;
 }
