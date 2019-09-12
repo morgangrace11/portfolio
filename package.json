@@ -24,6 +24,7 @@
     "chart.js": "^2.8.0",
     "d3": "^5.9.2",
     "express": "^4.16.4",
+    "file-loader": "^3.0.1",
     "highcharts": "^7.1.1",
     "highcharts-more": "^0.1.7",
     "material-ui": "^0.20.2",
@@ -33,6 +34,7 @@
     "react-d3-pie-chart": "^1.0.3",
     "react-dom": "^16.8.6",
     "react-highcharts": "^16.0.2",
+    "react-reveal": "^1.2.2",
     "react-typing-animation": "^1.6.2"
   },
   "devDependencies": {

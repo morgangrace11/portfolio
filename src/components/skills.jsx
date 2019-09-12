@@ -1,60 +1,42 @@
 import React from 'react';
-import { Doughnut } from 'react-chartjs-2';
-import { Pie } from 'react-chartjs-2';
+import Chip from '@material-ui/core/Chip';
 
-const doughnutdata = {
-  labels: [
-    "React", "CSS", "HTML", "Redux", "React Redux", "React Router", "Flex-box", "CSS Grid", "Material UI",
-  ],
-  datasets: [{
-    data: [35, 10, 11, 10, 10, 10, 15, 7, 7],
-    backgroundColor: [
-      '#FF6384',
-      '#36A2EB',
-      '#FFCE56'
-    ],
-    hoverBackgroundColor: [
-      '#FF6384',
-      '#36A2EB',
-      '#FFCE56'
-    ]
-  }]
-};
+class Skills extends React.Component {
+  constructor(props) {
+    super(props);
 
-const pieData = {
-  labels: [
-    "React", "CSS", "HTML", "Redux", "React Redux", "React Router", "Flex-box", "CSS Grid", "Material UI",
-  ],
-  datasets: [{
-    data: [35, 10, 11, 10, 10, 10, 15, 7, 7],
-    backgroundColor: [
-      '#FF6384',
-      '#36A2EB',
-      '#FFCE56'
-    ],
-    hoverBackgroundColor: [
-      '#FF6384',
-      '#36A2EB',
-      '#FFCE56'
-    ]
-  }]
-};
+    this.state = {
+      skills10: ['React', 'Angular', 'Redux', 'CSS',
+        'Styled Components', 'Flex-box', 'CSS Grid', 'Material UI', 'HTML'] ,
+      skills20: ['Webpack', 'Axios', 'MySQL', 'MongoDB', 'Sequelize', 'Mongoose', 'PostgreSQL', 'Express', 'Bcrypt' ],
+      skills30: ['Node.js', 'AWS', 'Docker', 'Javascript', 'Mocha', 'Chai', 'Jest', 'Enzyme']
+    }
+  }
 
-const Skills = () => {
-
-  return (
-    <div className="charts" >
-      <div>
-        <Pie data={pieData} legend={false} />
+  render() {
+    return (
+      <div className='skillsContent'>
+        <h1>Skills</h1>
+        <div className='flex'>
+        {this.state.skills10.map(skill => {
+          return <Chip style={{ margin: 'auto' }} label={skill} />
+        })}
+        </div>
+        <br />
+        <div className='flex'>
+        {this.state.skills20.map(skill => {
+          return <Chip style={{ margin: 'auto' }} label={skill} />
+        })}
+        </div>
+        <br />
+        <div className='flex'>
+        {this.state.skills30.map(skill => {
+          return <Chip style={{ margin: 'auto' }} label={skill} />
+        })}
+        </div>
       </div>
-      <div>
-        <Doughnut data={doughnutdata} legend={false} />
-      </div>
-      <div>
-        <Pie data={pieData} legend={false} />
-      </div>
-    </div>
-  );
+    )
+  }
 }
 
 export default Skills;

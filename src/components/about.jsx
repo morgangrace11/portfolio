@@ -10,23 +10,23 @@ const About = () => (
     </span>
       <br />
       <span>
-        full name: Morgan Grace
+        Full name: Morgan Grace
     </span>
       <br />
       <span>
-        age: 22
+        Age: 23
     </span>
       <br />
       <span>
-        hobbies: binging shows on netflix, hanging out with my cats, doing projects on my house
+        Hobbies: binging shows on netflix, hanging out with my cats, doing projects on my house
     </span>
       <br />
       <span>
-        goals: explore new programming languages, learn new interesting things to do with programming, learn how to make video games
+        Goals: explore new programming languages, learn new interesting things to do with programming, learn how to make video games
     </span>
       <br />
       <span>
-        npm WARN: caffiene required
+        npm <span className='npmWarn'>WARN</span>: caffiene required
     </span>
     </Typing>
   </div>

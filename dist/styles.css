@@ -1,13 +1,13 @@
 body {
-   margin: 0;
-    width: 100%;
-     text-align: center;
+  margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .title {
-  border-color: black;
-  text-align: center;
+  height: 200px;
 }
+
 
 .about {
    color: white;
@@ -27,42 +27,63 @@ body {
 
 .bash {
    background-color: #32CD32;
-   width: 100%;
    text-align: center;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
 }
 
 .skills {
-   border-color: black;
-   text-align: center;
+  text-align: center;
 }
 
 .skillsContent {
-   border-color: black;
-   text-align: center;
+  display: inline-block;
 }
 
 .projects {
-   border-color: black;
-   text-align: center;
+  height: 300px;
 }
 
 .contact {
-   border-color: black;
-   text-align: center;
+
 }
 
-.charts {
+a:hover {
+  background-color: rgb(233, 183, 54);
+  color: black;
+}
+
+.MuiAppBar-colorPrimary-8 {
+   background-color: #808080;
+}
+
+.hello {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding-top: 300px;
+  font-size: 60px;
+}
+
+.toolbar {
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.npmWarn {
+  background-color: yellow;
+  color:black;
+}
+
+.flex {
   display: flex;
-  padding-top: 50px;
-margin: 0 auto;
-text-align: center;
-width: 45%
 }
 
-.indivCharts {
-   align-content: center;
-   width: 100px;
-   height: 100px;
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+image:hover {
+  -webkit-filter: grayscale(100%) blur(2px);
+  filter: grayscale(100%) blur(2px);
 }
