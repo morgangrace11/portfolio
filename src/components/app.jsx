@@ -2,7 +2,8 @@ import React from 'react';
 import About from './about.jsx';
 import Skills from './skills.jsx';
 import Projects from './projects.jsx'
-import Hello from './hello.jsx'
+import Hello from './hello.jsx';
+import Contact from './contact.jsx';
 import Toolbar from '@material-ui/core/Toolbar';
 import AppBar from '@material-ui/core/AppBar';
 import Fade from 'react-reveal/Fade';
@@ -55,7 +56,9 @@ class App extends React.Component {
             </div>
           </Fade>
           <div className="container">
-          <div className="contact" ></div>
+          <div className="contact" >
+            <Contact />
+          </div>
           </div>
         </div>
       }
