@@ -2,14 +2,11 @@ body {
   margin: 0;
   width: 100%;
   text-align: center;
-}
-
-.title {
-  height: 200px;
+  font-family: 'Poppins', sans-serif;
 }
 
 
-.about {
+/* .about {
    color: white;
    background-color: black;
    width: 50%;
@@ -18,25 +15,29 @@ body {
    text-align: left;
    border-radius: 5px;
    box-shadow: 6px 10px 8px #888888;
-}
+} */
 
 .aboutContent {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.bash {
+/* .bash {
    background-color: #32CD32;
    text-align: center;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
-}
+} */
 
 .skills {
   text-align: center;
+  width: 100%;
+  background-color: #848dff;
+
 }
 
 .skillsContent {
+  padding-bottom: 30px;
   display: inline-block;
 }
 
@@ -45,9 +46,14 @@ body {
 }
 
 .contact {
-
+  background-color: #848dff;
+  padding-top: 20px;
+  padding-bottom: 10vh;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 a:hover {
   background-color: rgb(233, 183, 54);
   color: black;
@@ -86,4 +92,26 @@ h1 {
 image:hover {
   -webkit-filter: grayscale(100%) blur(2px);
   filter: grayscale(100%) blur(2px);
+}
+
+.titleContainer {
+  display: inline-block;
+  width: auto;
+  text-align: right;
+}
+.title {
+  background-color: #f0f0f0;
+  padding: 2px 10px 2px 10px;
+  border-radius: 18px;
+  width: 63px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.links {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+.links a {
+
 }
