@@ -48,21 +48,19 @@ class Contact extends React.Component {
   render() {
     return (
       <div >
-        <div >
+        <h1>
           Contact
+        </h1>
+        <div className="titleContainer">
+          <div ><div className="title">Email</div></div>
+          <div ><div className="title">LinkedIn</div></div>
+          <div ><div className="title">Github</div></div>
         </div>
-        <form>
-        <label htmlFor="name">Name</label>
-        <input onChange={this.handleName} type="text" name="name" />
-    
-        <label htmlFor="email">Email</label>
-        <input onChange={this.handleEmail} type="email" name="email" />
-    
-        <label htmlFor="message">Message</label>
-        <textarea onChange={this.handleMessage} name="message" rows="3"></textarea>
-    
-        <input onClick={this.onSubmit} type="submit" />
-      </form>
+        <div className="links">
+          <div ><a href="mailto:morgangrace720@gmail.com">morgangrace720@gmail.com</a></div>
+          <div ><a href="lhttps://www.linkedin.com/in/morgangrace11/">linkedin.com/in/morgangrace11</a></div>
+          <div ><a href="https://github.com/morgangrace11">github.com/morgangrace11</a></div>
+        </div>
       </div>
     );
   }
