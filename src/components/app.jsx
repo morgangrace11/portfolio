@@ -28,8 +28,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-      {this.state.loading ?
-         <Hello /> :
          <div>
           <AppBar position="static" style={{height: '50px', backgroundColor: "black" }}>
             <Toolbar>
@@ -38,12 +36,12 @@ class App extends React.Component {
           </AppBar>
           <br />
            <Fade left>
-            <div className="about">
+            {/* <div className="about">
               <div className="bash" >
                 1. bash
-            </div>
+            </div> */}
               <About />
-            </div>
+            {/* </div> */}
           </Fade>
           <Fade left>
             <div className="skills">
@@ -61,7 +59,6 @@ class App extends React.Component {
           </div>
           </div>
         </div>
-      }
       </div>
     )
   }
