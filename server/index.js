@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser')
-const creds = require('../email.config');
+// const creds = require('../email.config');
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, '../dist')));
